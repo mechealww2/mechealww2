@@ -73,110 +73,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-win10_npm" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/10/12/win10_npm/" class="article-date">
-  <time class="dt-published" datetime="2023-10-12T04:14:35.977Z" itemprop="datePublished">2023-10-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/10/12/win10_npm/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="引言"><a href="#引言" class="headerlink" title="引言:"></a>引言:</h1><h2 id="什么是node-js"><a href="#什么是node-js" class="headerlink" title="什么是node.js?"></a>什么是node.js?</h2><p>javaScript是一门脚本语言，通常被用来编写、执行本地源代码。脚本语言需要一个解析器才能运行，HTML文件中的JavaScript代码由浏览器解析执行。而自行执行JavaScript代码则需要Node.js解析器才能运行。</p>
-<p>每个解析器都是一个运行环境，允许JavaScript定义各种数据结构和执行各种计算，同时也允许JavaScript调用运行环境提供的内置对象和方法。浏览器环境下，JavaScript常被用来操作DOM等功能，因此浏览器提供了document等内置对象；在Node.js环境下，JavaScript通常用来处理磁盘文件和搭建HTTP服务器，因此Node.js提供了fs、http等内置对象。</p>
-<p>Node.js是一个基于V8引擎的JavaScript运行环境。V8引擎具有快速执行JavaScript代码的能力，并且性能非常优秀。Node.js专注于优化一些特殊用例，并提供了替代的API，在非浏览器环境下更好地运行V8引擎。</p>
-<p>作为一种服务器端JavaScript平台，Node.js能够快速创建网络应用程序。同时，它也支持前后端JavaScript编程，为开发者提供了更高效的系统设计和一致性。</p>
-<p>更详细的介绍可以关注知乎上的这个解答【1】</p>
-<hr>
-<p><img src="https://img-blog.csdnimg.cn/65917432f38d47f1900127d45c2e1993.png" alt="在这里插入图片描述"></p>
-<p>@[TOC](WIN10 NPM的安装)</p>
-<h1 id="1-简介"><a href="#1-简介" class="headerlink" title="1. 简介"></a>1. 简介</h1><p>NPM，Node Package Manager的缩写，是JavaScript编程语言的包管理器。它主要用于管理和安装Node.js项目的包和依赖项。NPM允许开发人员通过提供一个集中的包存储库来轻松地共享和重用代码，这些包可以轻松地安装和集成到项目中。</p>
-<p>NPM的特点：</p>
-<p>包安装：NPM允许开发人员轻松地为他们的项目安装包和依赖项。它提供了一个命令行界面（CLI），允许开发人员搜索软件包、安装特定版本和管理依赖关系。</p>
-<p>包发布：NPM为开发人员提供了一个平台来发布他们自己的包，并将其提供给更广泛的社区。这允许开发人员之间轻松共享和协作。</p>
-<p>版本管理：NPM允许开发人员指定他们想要在项目中使用的包的版本。这有助于确保项目使用兼容版本的包，并有助于管理依赖关系。</p>
-<p>依赖关系管理：NPM自动管理包的依赖关系，确保所有必需的依赖关系都已安装并相互兼容。它还提供了用于更新和管理依赖关系的工具。</p>
-<p>脚本：NPM允许开发人员在他们的package.json文件中定义脚本，该文件可用于自动化常见任务，如构建、测试和部署项目。</p>
-<p>注册表：NPM维护一个包的注册表，作为开发人员发布和发现包的中央存储库。注册表包含有关每个包的信息，包括其名称、版本、描述和依赖项。</p>
-<p>NPM的使用：</p>
-<p>要使用NPM，您需要在系统上安装Node.js，因为NPM与Node.js捆绑在一起。安装了Node.js后，您可以使用NPM CLI执行各种任务。以下是一些常见的命令：</p>
-<ul>
-<li><p>npm-init：初始化一个新的Node.js项目并创建一个package.json文件。</p>
-</li>
-<li><p>npm install：安装package.json文件中列出的所有依赖项。</p>
-</li>
-<li><p>npm install＜package＞：安装特定的程序包。</p>
-</li>
-<li><p>npm install–save＜package＞：安装一个包，并将其作为依赖项添加到package.json文件中。</p>
-</li>
-<li><p>npm更新：将所有软件包更新到其最新版本。</p>
-</li>
-<li><p>npm uninstall＜package＞：卸载程序包。</p>
-</li>
-<li><p>npm search＜keyword＞：在npm注册表中搜索包。</p>
-</li>
-<li><p>npm发布：将包发布到npm注册表。</p>
-</li>
-</ul>
-<p>NPM广泛应用于JavaScript和Node.js生态系统中，拥有庞大而活跃的开发人员社区。它提供了一种方便高效的方式来管理包和依赖项，使其成为JavaScript开发人员的重要工具。</p>
-<h1 id="2-安装"><a href="#2-安装" class="headerlink" title="2. 安装"></a>2. 安装</h1><ul>
-<li>首先，安装Node.js</li>
-<li><ul>
-<li>安装<br>在<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/download">官网</a>，根据64 32位选择对应的安装包。<br>使用默认设置安装程序进行安装。但是，请注意，您可以在“自定义安装”中选择更改安装位置，也可以选择要安装的组件。默认选择适用于所有用户的组件和6系列和8系列的版本，这些默认设置应该能够满足大多数用户的需求。<br>同样，您可以选择在完成安装后启动Node.js安装程序。</li>
-</ul>
-</li>
-<li><ul>
-<li>验证Node.js是否已正确安装<br>以管理员身份打开PowerShell，输入“node -v”命令，然后按回车。这将在运行环境中输出Node.js的当前版本。如果您看到版本号，则表明已成功安装Node.js。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">v18<span class="number">.18</span><span class="number">.0</span></span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>然后，安装NPM</li>
-<li><ul>
-<li>安装NPM<br>NPM(全称是Node Package Manager)是Node.js的包管理器，因此如果您要使用Node.js进行开发，则需要安装它。<br>NPM通常随Node.js一起安装，因此您不需要自己单独安装NPM。但是，在某些情况下，您可能需要更新NPM或使用较旧的版本。此时，您可以使用以下命令在全局范围内安装NPM。</li>
-</ul>
-</li>
-<li><ul>
-<li>验证 NPM 的安装</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br><span class="line"><span class="number">9.8</span><span class="number">.1</span></span><br></pre></td></tr></table></figure>
-<h1 id="3-尝试用NPM安装包"><a href="#3-尝试用NPM安装包" class="headerlink" title="3. 尝试用NPM安装包"></a>3. 尝试用NPM安装包</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install xxx</span><br></pre></td></tr></table></figure>
-
-
-<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><p>【1】 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/627712011">知乎-Node.js</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/10/12/win10_npm/" data-id="clnmofcto0001pcwlhz2o4q7d" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2023/10/11/hello-world/" class="article-date">
@@ -216,7 +112,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2023/10/11/hello-world/" data-id="clnmofctk0000pcwl1ory6cd2" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      <a data-url="http://example.com/2023/10/11/hello-world/" data-id="clnmovqlu0000p0wladfj45xl" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
       
       
       
@@ -257,10 +153,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2023/10/12/win10_npm/">Hello World</a>
-          </li>
         
           <li>
             <a href="/2023/10/11/hello-world/">Hello World</a>
